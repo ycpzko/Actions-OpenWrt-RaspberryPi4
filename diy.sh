@@ -34,7 +34,7 @@ mkdir -p files/etc/config
 cp -f ../wireless files/etc/config/
 
 #修改机器名称
-sed -i 's/OpenWrt/RaspberryPi4/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/RaspberryPi3B/g' package/base-files/files/bin/config_generate
 
 #替换banner
 rm -rf package/base-files/files/etc/banner
