@@ -52,12 +52,12 @@ jobs:
         sudo -E apt-get -qq clean
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
     - name: 同步最新的源码
-        run: |
+      run: |
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
           git pull openwrt master
           git remote -v   
     - name: openclash
-        run: |
+      run: |
           cd package
           mkdir luci-app-openclash
           cd luci-app-openclash
