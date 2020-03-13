@@ -55,7 +55,7 @@ jobs:
       run: |
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
           git pull openwrt master
-          git remote -v   
+          git remote -v  
     - name: openclash
       run: |
           cd package
