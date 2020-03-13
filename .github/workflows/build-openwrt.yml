@@ -53,9 +53,9 @@ jobs:
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
     - name: 同步最新的源码
       run: |
-          git remote add openwrt https://github.com/coolsnowwolf/lede.git
-          git pull openwrt master
-          git remote -v  
+        git remote add openwrt https://github.com/coolsnowwolf/lede.git
+        git pull openwrt master
+        git remote -v  
     - name: openclash
       run: |
           cd package
